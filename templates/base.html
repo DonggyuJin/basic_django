@@ -13,8 +13,14 @@
 </head>
 <body>
 {% include "navbar.html" %}
+<!--내용 시작-->
 {% block content %}
 {% endblock %}
+<!--내용 끝-->
 <script src="{% static 'bootstrap.min.js' %}"></script>
+<!--자바스크립트 시작-->
+{% block script %}
+{% endblock %}
+<!--자바스크립트 끝-->
 </body>
 </html>
